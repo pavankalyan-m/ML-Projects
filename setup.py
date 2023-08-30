@@ -1,6 +1,7 @@
 from setuptools import find_packages,setup
 HYPHEN_E_DOT='-e .'
 def get_requirements(file):
+    requirements=[]
     with open(file) as f:
         requirements=f.readlines()
         requirements=[i.replace('\n','') for i in requirements if '\n' in i]
